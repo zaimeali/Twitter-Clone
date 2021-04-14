@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Twitter Clone</title>
+
+        <!-- Styles.css -->
+        <link rel="stylesheet" href="./styles.css">
+
+        <!-- Skeleton -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+            integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+            crossorigin="anonymous" />
+    </head>
+    <body>
+        <header>
+            <h1 class="title">Tweet Media 🐧</h1>
+        </header>
+
+        <main>
+            <form class="tweet-form">
+                <label for="name">Name: </label>
+                <input class="u-full-width" type="text" name="name" id="name">
+
+                <label for="content">Tweet: </label>
+                <textarea class="u-full-width" name="content" id="content"></textarea>
+
+                <button class="button-primary">Post Tweet ✨</button>
+            </form>
+
+            <div class="loading">
+                <img src="./loading.gif" alt="Loading...">
+            </div>
+
+            <div class="posts"></div>
+        </main>
+
+        <script src="./client.js" defer></script>
+    </body>
+</html>
